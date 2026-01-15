@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>page</title>
+        <title>to do list</title>
     </head>
     <script>
         function def(){
-            document.getElementById("div").innerHTML += "<h1>hi</h1>"
+            document.getElementById("div").innerHTML += "<h1>"+ val.input +"</h1>"
         }
     </script>
     <body>
+        <input id="val"></input>
+        <button id="btn" onclick="def()">button</button>
         <div id="div">
         <h1>hello world</h1>
         </div>
-        <button id="btn" onclick="def()">button</button>
     </body>
 </html>
