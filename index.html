@@ -11,8 +11,12 @@
     <script>
         list = []
         function add(){
-            document.getElementById("div").innerHTML += "<h1 id=" + list.length + ">" + document.getElementById("val").value +"</h1>"
+            document.getElementById("div").innerHTML += "<h1 id=\"" + list.length + "\">" + document.getElementById("val").value +"</h1>"
+            list.push({"id":list.length,"cont":document.getElementById("val").value})
             document.getElementById("val").value = ""
+        }
+        function rm(){
+            
         }
     </script>
     <body>
