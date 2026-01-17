@@ -3,15 +3,22 @@
     <head>
         <title>to do list</title>
     </head>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
     <script>
-        function def(){
-            document.getElementById("div").innerHTML += "<h1>"+ document.getElementById("val").value +"</h1>"
+        list = []
+        function add(){
+            document.getElementById("div").innerHTML += "<h1 id=\"" + str(list.length) + "\"" + ">"+ document.getElementById("val").value +"</h1>"
+            list.push({"id":list.length,"cont":document.getElementById("val").value})
             document.getElementById("val").value = ""
         }
     </script>
     <body>
         <input id="val"></input>
-        <button id="btn" onclick="def()">button</button>
+        <button id="btn" onclick="add()">add</button>
         <div id="div">
         <h1>hello world</h1>
         </div>
