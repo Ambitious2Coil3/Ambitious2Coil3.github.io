@@ -11,7 +11,7 @@
     <script>
         list = []
         function add(){
-            document.getElementById("div").innerHTML += "<button style=\"display:inline-block;" + "\" id=\"b" + list.length + "\" onclick=\"rm(" + list.length  + ")\">X</button>"+"<p id=\"" + list.length + "\">" + document.getElementById("val").value +"</p>"
+            document.getElementById("div").innerHTML += "<button id=\"b" + list.length + "\" onclick=\"rm(" + list.length  + ")\">X</button>"+"<p display=\"display:inline-block;margin-left: 10px;" + "\" id=\"" + list.length + "\">" + document.getElementById("val").value +"</p>"
             list.push({"id":list.length,"cont":document.getElementById("val").value})
             document.getElementById("val").value = ""
         }
